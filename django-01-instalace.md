@@ -25,7 +25,7 @@ dj-venv\Scripts\activate
 ```
 a vidím název v závorkách, což znamená, že je vše OK. `(dj-venv) C:\`
 
-#### Instalace Djanga
+### Instalace Djanga
 
 V takovém virtuálním prostředí nainstaluji Django.
 
