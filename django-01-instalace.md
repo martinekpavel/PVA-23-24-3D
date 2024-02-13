@@ -21,14 +21,3 @@ C:\dj-venv\Scripts\activate
 ```
 Vidím název virtuálního prostředí v závorkách, tzn. je aktivováno.
 
-### Nový projekt 
-
-```
-django-admin startproject airline
-```
-
-Nová apka
-
-```
-python manage.py startapp flights
-```
