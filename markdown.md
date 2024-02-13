@@ -9,6 +9,7 @@
 
 - [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)
+- [https://www.markdownguide.org/extended-syntax/](https://www.markdownguide.org/extended-syntax/)
 
 ### Emoji cheat sheet
 
