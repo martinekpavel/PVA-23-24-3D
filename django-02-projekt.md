@@ -1,4 +1,14 @@
-# Django - projekt
+### Nový projekt 
+
+```
+django-admin startproject airline
+```
+
+Nová apka
+
+```
+python manage.py startapp flights
+```
 
 
 ```python
