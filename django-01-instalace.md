@@ -1,4 +1,4 @@
-# Django - instalace
+# Django - příprava a instalace
 
 ### Virtuální prostředí v Pythonu
 
@@ -21,3 +21,10 @@ C:\dj-venv\Scripts\activate
 ```
 Vidím název virtuálního prostředí v závorkách, tzn. je aktivováno.
 
+#### Instalace Djanga
+
+```
+pip install django
+```
+
+a jste připraveni vytvořit svůj projekt (webovou aplikaci).
