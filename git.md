@@ -1,6 +1,6 @@
 # Git
 
-### Create a new repository on the command line
+### Create a new repository on the command line (and connect to Github)
 
 ```
 echo "# PVA-23-24-3D" >> README.md
