@@ -17,5 +17,6 @@ Opět v cmd.exe
 ```
 C:\python -m venv dj-venv
 C:\dj-venv\Scripts\activate
-(dj-venv) C:\ aktivováno
+(dj-venv) C:\ 
 ```
+Vidím název virtuálního prostředí v závorkách, tzn. je aktivováno.
