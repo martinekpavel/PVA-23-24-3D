@@ -12,6 +12,20 @@ django-admin startproject airline
 python manage.py startapp flights
 ```
 
+V souboru `airline\settings.py`
+
+```python
+INSTALLED_APPS = [
+    'flights', # doplníme název aplikace
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+```
+
 
 V souboru `airline\urls.py`
 
