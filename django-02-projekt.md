@@ -85,14 +85,16 @@ urlpatterns = [
 Upravíte soubor pro aplikaci `flights\views.py` (logika aplikace, soubor funkcí, které renderují výstupy pro šablony)
 
 ```python
-from django.urls import path 
+from .models import Flight
 
-from . import views
-
-urlpatterns = [
-    path("", views.index, name="index")
-]
+def index(request):
+    return render(request, "flights/index.html", {
+        "flights": Flight.objects.all()
+    })
 ```
+
+Vytvoříte správné šablony (layout.html a index.html) např. podle [django-templates](django-templates.md).
+
 
 
 
