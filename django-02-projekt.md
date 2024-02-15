@@ -29,6 +29,8 @@ INSTALLED_APPS = [
 V souboru `airline\urls.py`
 
 ```python
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -67,3 +69,31 @@ python manage.py migrate
 ```
 
 Další typy modelů (datových typu jednotlivých polí v tabulce) naleznete v [dokumentaci Djanga](https://docs.djangoproject.com/en/5.0/ref/models/fields/).
+
+Vytvoříte soubor pro aplikaci `flights\urls.py`
+
+```python
+from django.urls import path 
+
+from . import views
+
+urlpatterns = [
+    path("", views.index, name="index")
+]
+```
+
+Upravíte soubor pro aplikaci `flights\views.py` (logika aplikace, soubor funkcí, které renderují výstupy pro šablony)
+
+```python
+from django.urls import path 
+
+from . import views
+
+urlpatterns = [
+    path("", views.index, name="index")
+]
+```
+
+
+
+
