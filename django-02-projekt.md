@@ -65,3 +65,5 @@ python manage.py makemigrations
 ```
 python manage.py migrate
 ```
+
+Další typy modelů (datových typu) naleznete v [dokumentaci Djangag](https://docs.djangoproject.com/en/5.0/topics/db/models/).
