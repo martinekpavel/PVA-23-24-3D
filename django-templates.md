@@ -43,5 +43,4 @@ Obsah souboru `index.html`
             </li>
         {% endfor %}
     </ul>
-{% endblock %}
 ```
