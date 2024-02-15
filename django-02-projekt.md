@@ -95,7 +95,30 @@ def index(request):
 
 Vytvoříte správné šablony (layout.html a index.html) např. podle [django-templates](django-templates.md).
 
+Vytvoříte superuživatele (zvolíte uživatelské jméno a heslo) pomocí příkazu:
 
+```
+python manage.py createsuperuser
+```
+Výstup může vypadat takto:
 
+```
+(virtual-django) C:\airline>python manage.py createsuperuser
+Username (leave blank to use 'martinek.p'): admin
+Email address:
+Password:
+Password (again):
+Superuser created successfully.
+```
+
+Upravíme soubor `admin.py` v aplikaci:
+
+```
+from .models import Airport, Flight
+
+admin.site.register(Airport)
+admin.site.register(Flight)
+```
+A nyní můžeme přímo editovat databázi v admin rozhraní aplikace.
 
 
