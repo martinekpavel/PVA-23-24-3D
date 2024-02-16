@@ -58,16 +58,6 @@ class Flight(models.Model):
     
 ```
 
-Přípravíme a vytvoříme databázi (v cmd.exe)
-
-```
-python manage.py makemigrations
-```
-
-```
-python manage.py migrate
-```
-
 Další typy modelů (datových typu jednotlivých polí v tabulce) naleznete v [dokumentaci Djanga](https://docs.djangoproject.com/en/5.0/ref/models/fields/).
 
 Vytvoříte soubor pro aplikaci `flights\urls.py`
@@ -92,8 +82,17 @@ def index(request):
         "flights": Flight.objects.all()
     })
 ```
-
 Vytvoříte správné šablony (layout.html a index.html) např. podle [django-templates](django-templates.md).
+
+Připravíme a vytvoříme databázi (v cmd.exe)
+
+```
+python manage.py makemigrations
+```
+
+```
+python manage.py migrate
+```
 
 Vytvoříte superuživatele (zvolíte uživatelské jméno a heslo) pomocí příkazu:
 
