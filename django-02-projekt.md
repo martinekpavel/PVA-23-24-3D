@@ -120,10 +120,11 @@ Superuser created successfully.
 Upravíme soubor `admin.py` v aplikaci:
 
 ```
-from .models import Airport, Flight
+from .models import Airport, Flight, Passenger
 
 admin.site.register(Airport)
 admin.site.register(Flight)
+admin.site.register(Passenger)
 ```
 A nyní můžeme přímo editovat databázi v admin rozhraní aplikace.
 
