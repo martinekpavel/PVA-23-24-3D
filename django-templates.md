@@ -38,8 +38,9 @@ Obsah souboru `index.html`
 ```html
     <ul>
         {% for flight in flights %}
-            <li>
-               Flight {{ flight.id }}: {{ flight.origin }} to {{ flight.destination }}
+            <li><a href="{% url 'flight' flight.id %}">
+                Flight {{ flight.id }}: {{ flight.origin }} to {{ flight.destination }}
+            </a>
             </li>
         {% endfor %}
     </ul>
