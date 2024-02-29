@@ -34,5 +34,10 @@ a do šablony doplním:
         No passengers.
     {% endfor %}
 ```
+Vytvořím odkaz na seznam letů
 
+```python
+<a href="{% url 'index' %}">Back to Flight List</a>
+```
+   
     
