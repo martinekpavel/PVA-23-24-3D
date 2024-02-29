@@ -39,5 +39,12 @@ Vytvořím odkaz na seznam letů
 ```python
 <a href="{% url 'index' %}">Back to Flight List</a>
 ```
-   
+
+### Chci mít možnost přidat pasažéry k letu
+
+Měli byste vědět, kam doplníte tento řádek
+
+```python
+path("<int:flight_id>/book", views.book, name="book"),
+```   
     
