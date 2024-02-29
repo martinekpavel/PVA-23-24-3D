@@ -15,6 +15,24 @@ def flight(request, flight_id):
           "flight": flight
     })
 ```
-  
+
+### Chci zobrazit pasažéry na webu
+
+Do souboru `flights\views.py` do funkce `flight`, do dat pro šablonu přidám:
+
+```python
+"passengers": flight.passengers.all()
+```
+
+a do šablony doplním:
+
+```python
+ <h2>Passengers</h2>
+    {% for p in passengers %}
+        <li>{{p.first}} {{p.last}}</li>
+    {% empty %}
+        No passengers.
+    {% endfor %}
+```
 
     
