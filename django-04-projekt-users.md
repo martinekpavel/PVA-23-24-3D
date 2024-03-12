@@ -72,7 +72,7 @@ def logout_view(request):
     })
 ```
 
-Vytvoříme šablony `users\templates\users\layout.py`, `users\templates\users\login.py`, `users\templates\users\user.py`.
+Vytvoříme šablony `users\templates\users\layout.html`, `users\templates\users\login.html`, `users\templates\users\user.html`.
 
 ### Login
 
