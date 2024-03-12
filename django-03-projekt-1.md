@@ -81,3 +81,19 @@ Do funkce `flight` doplním proměnou, která do šablony odešle data těch pas
 ```python
     "non_passengers": Passenger.objects.exclude(flights=flight).all()
 ```
+
+### Mohu si upravit zobrazení v admin rozhraní 
+
+V souboru  `models.py` provedu úpravy
+
+```python
+class FlightAdmin(admin.ModelAdmin):
+    list_display = ("id", "origin", "destination", "duration")
+
+class PassengerAdmin(admin.ModelAdmin):
+    filter_horizontal = ("flights",)
+
+admin.site.register(Flight, FlightAdmin)
+admin.site.register(Passenger, PassengerAdmin)
+```
+
