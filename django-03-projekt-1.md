@@ -59,5 +59,25 @@ def book(request, flight_id):
         passenger = Passenger.objects.get(pk=int(request.POST["passenger"]))
         passenger.flights.add(flight)
         return HttpResponseRedirect(reverse("flight", args=(flight.id,)))
-```   
-    
+```
+
+Upravím šablonu daného letu tak, abych tam měl formulář pro přidání pasažéra
+
+```html
+<h2>Add Passenger</h2>
+    <form action="{% url 'book' flight.id %}" method="POST">
+        {% csrf_token %}
+        <select name="passenger" id="passenger">
+            {% for passanger in non_passengers  %}
+            <option value="{{ passanger.id }}">{{ passanger }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Add Passenger">
+    </form>
+```
+
+Do funkce `flight` doplním proměnou, která do šablony odešle data těch pasažérů, kteří na daném letu nejsou:
+
+```python
+    "non_passengers": Passenger.objects.exclude(flights=flight).all()
+```
