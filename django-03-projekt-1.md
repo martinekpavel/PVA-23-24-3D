@@ -46,5 +46,18 @@ Měli byste vědět, kam doplníte tento řádek
 
 ```python
 path("<int:flight_id>/book", views.book, name="book"),
+```
+Ve správném souboru uděláme následující změny:
+
+```python
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+
+def book(request, flight_id):
+    if request.method == "POST":
+        flight = Flight.objects.get(pk=flight_id)
+        passenger = Passenger.objects.get(pk=int(request.POST["passenger"]))
+        passenger.flights.add(flight)
+        return HttpResponseRedirect(reverse("flight", args=(flight.id,)))
 ```   
     
