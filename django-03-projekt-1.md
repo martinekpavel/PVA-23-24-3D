@@ -84,7 +84,7 @@ Do funkce `flight` doplním proměnou, která do šablony odešle data těch pas
 
 ### Mohu si upravit zobrazení v admin rozhraní 
 
-V souboru  `models.py` provedu úpravy
+V souboru  `admin.py` provedu úpravy
 
 ```python
 class FlightAdmin(admin.ModelAdmin):
