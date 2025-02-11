@@ -58,3 +58,11 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello")
 ```
+
+Spustíte server
+
+```python
+python manage.py runserver
+```
+
+Zadáte správnou adresu
