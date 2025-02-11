@@ -1,12 +1,16 @@
 # Django - first app (hello)
 
-### Tvorba projektu
+### Tvorba projektu 
+
+req: musím mít spuštěno virtuální prostředí kde mám django
 
 ```
 django-admin startproject lecture3
 ```
 
 ### První aplikace (hello) v projektu
+
+Vlezu do složky projektu: cd lecture3
 
 ```
 python manage.py startapp hello
