@@ -5,6 +5,7 @@
 
 - [Django - instalace](django-01-instalace.md)
 - [Django - databáze - projekt Airline](django-02-projekt.md)
+- [Django - css](django-css.md)
 
   ### Zdroj
 
