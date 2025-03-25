@@ -8,12 +8,12 @@ Přímo soubor: https://www.sqlite.org/2025/sqlite-tools-osx-x64-3490100.zip
 
 Pozn. 1: Bylo by dobré přidat do `PATH`.
 
-Pozn. 2: Alternativně můžeme s těmito soubory pracovat přímo ve VSC pomocí pluginů.
+Pozn. 2: Alternativně můžeme s sqlite databázovými soubory soubory pracovat přímo ve VSC pomocí pluginů.
 
 ## Otevřeme nový soubor (databázi)
 
 Windows CLI
-Vytvoříme novou databázi:
+Otevřeme si ve složce terminál (cmd) a vytvoříme novou databázi:
 ```
 sqlite3 db.sqlite
 ```
@@ -135,17 +135,18 @@ insert into automobily (spz,znacka,pocet_dveri,vykon,barva,majitel,rok_vyroby) v
 
 `="insert into automobily (spz,znacka,pocet_dveri,vykon,barva,majitel,rok_vyroby) values ('"&A2&"','"&B2&"',"&C2&","&D2&",'"&E2&"',"&F2&","&G2&");"`
 
-="insert into obyvatele (cislo, jmeno, prijmeni, ulice, c_p_, město, psc, rodne_cislo) values ("&A2&",'"&B2&"','"&C2&"','"&D2&"','"&E2&"','"&F2&"','"&G2&"','"&H2&"');"
+`="insert into obyvatele (cislo, jmeno, prijmeni, ulice, c_p_, město, psc, rodne_cislo) values ("&A2&",'"&B2&"','"&C2&"','"&D2&"','"&E2&"','"&F2&"','"&G2&"','"&H2&"');"`
 
-="insert into mazlicek (cislo, druh, jmeno, datum_narozeni, datum_porizeni, majitel) values ("&A2&",'"&B2&"','"&C2&"',"&D2&","&E2&","&F2&");"
+`="insert into mazlicek (cislo, druh, jmeno, datum_narozeni, datum_porizeni, majitel) values ("&A2&",'"&B2&"','"&C2&"',"&D2&","&E2&","&F2&");"`
 
 ### Vylepšení
-
+```
 .mode box
 .header on
+```
 
- select * from obyvatele join mazlicek on mazlicek.cislo = obyvatele.cislo where mazlicek.druh = 'kočka' or mazlicek.druh = 'pes';
+ `select * from obyvatele join mazlicek on mazlicek.cislo = obyvatele.cislo where mazlicek.druh = 'kočka' or mazlicek.druh = 'pes';`
 
- select obyvatele.jmeno,obyvatele.prijmeni,mazlicek.druh,mazlicek.jmeno from obyvatele join mazlicek on mazlicek.cislo = obyvatele.cislo where mazlicek.druh = 'kočka' or mazlicek.druh = 'pes';
+ `select obyvatele.jmeno,obyvatele.prijmeni,mazlicek.druh,mazlicek.jmeno from obyvatele join mazlicek on mazlicek.cislo = obyvatele.cislo where mazlicek.druh = 'kočka' or mazlicek.druh = 'pes';`
 
-  select obyvatele.jmeno,obyvatele.prijmeni,mazlicek.druh,mazlicek.jmeno from obyvatele join mazlicek on mazlicek.cislo = obyvatele.cislo where mazlicek.druh = 'kočka' or mazlicek.druh = 'pes' order by mazlicek.druh;
+  `select obyvatele.jmeno,obyvatele.prijmeni,mazlicek.druh,mazlicek.jmeno from obyvatele join mazlicek on mazlicek.cislo = obyvatele.cislo where mazlicek.druh = 'kočka' or mazlicek.druh = 'pes' order by mazlicek.druh;`
