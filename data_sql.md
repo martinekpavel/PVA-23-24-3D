@@ -135,7 +135,7 @@ insert into automobily (spz,znacka,pocet_dveri,vykon,barva,majitel,rok_vyroby) v
 
 `="insert into automobily (spz,znacka,pocet_dveri,vykon,barva,majitel,rok_vyroby) values ('"&A2&"','"&B2&"',"&C2&","&D2&",'"&E2&"',"&F2&","&G2&");"`
 
-`="insert into obyvatele (cislo, jmeno, prijmeni, ulice, c_p_, město, psc, rodne_cislo) values ("&A2&",'"&B2&"','"&C2&"','"&D2&"','"&E2&"','"&F2&"','"&G2&"','"&H2&"');"`
+`="insert into obyvatele (cislo, jmeno, prijmeni, ulice, c_p_, mesto, psc, rodne_cislo) values ("&A2&",'"&B2&"','"&C2&"','"&D2&"','"&E2&"','"&F2&"','"&G2&"','"&H2&"');"`
 
 `="insert into mazlicek (cislo, druh, jmeno, datum_narozeni, datum_porizeni, majitel) values ("&A2&",'"&B2&"','"&C2&"',"&D2&","&E2&","&F2&");"`
 
