@@ -4,7 +4,7 @@
 
 https://www.sqlite.org/download.html
 
-Přímo soubor: [https://www.sqlite.org/2025/sqlite-tools-osx-x64-3490100.zip](https://www.sqlite.org/2025/sqlite-tools-win-x64-3490100.zip)
+Přímo soubor: https://www.sqlite.org/2025/sqlite-tools-win-x64-3490100.zip
 
 Pozn. 1: Bylo by dobré přidat do `PATH`.
 
