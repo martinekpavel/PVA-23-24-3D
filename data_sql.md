@@ -150,3 +150,53 @@ insert into automobily (spz,znacka,pocet_dveri,vykon,barva,majitel,rok_vyroby) v
  `select obyvatele.jmeno,obyvatele.prijmeni,mazlicek.druh,mazlicek.jmeno from obyvatele join mazlicek on mazlicek.cislo = obyvatele.cislo where mazlicek.druh = 'kočka' or mazlicek.druh = 'pes';`
 
   `select obyvatele.jmeno,obyvatele.prijmeni,mazlicek.druh,mazlicek.jmeno from obyvatele join mazlicek on mazlicek.cislo = obyvatele.cislo where mazlicek.druh = 'kočka' or mazlicek.druh = 'pes' order by mazlicek.druh;`
+
+
+## Záloha
+
+`.backup nazev_souboru`
+
+## Update
+
+### Example
+
+UPDATE employees
+SET lastname = 'Smith'
+WHERE employeeid = 3;
+
+### Syntax
+
+UPDATE table_name
+SET column1 = value1, column2 = value2,
+WHERE condition;
+
+###  Updating Multiple Columns
+
+UPDATE employees
+SET city = 'Toronto', state = 'ON', postalcode = 'M5P 2N7'
+WHERE employeeid = 4;
+
+
+
+## Delete
+
+### Example
+
+To delete a specific row from a table:
+
+DELETE FROM table_name WHERE condition;
+For instance, to delete a row with id = 1:
+
+DELETE FROM employees WHERE id = 1;
+
+### Deleting Multiple Rows
+
+To delete multiple rows based on a condition:
+
+DELETE FROM employees WHERE department = 'Sales';
+
+### Deleting All Rows
+
+To delete all rows from a table:
+
+DELETE FROM employees;
