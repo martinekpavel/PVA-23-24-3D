@@ -79,6 +79,22 @@ urlpatterns = [
 ]
 ```
 
+Nyní vytvoříte správné šablony (layout.html a index.html) např. podle [django-templates](django-templates.md).
+
+Do bloku `{% block body %}` vložíte kód:
+
+```html
+  <ul>
+        {% for flight in flights %}
+            <li><a href="{% url 'flight' flight.id %}">
+                Flight {{ flight.id }}: {{ flight.origin }} to {{ flight.destination }}
+            </a>
+            </li>
+        {% endfor %}
+    </ul>
+```
+Pozor, protože nemáme funkci s názvem `flight`, web nebude fungovat, dokud ji nenaprogramujeme.
+
 Upravíte soubor pro aplikaci `flights\views.py` (logika aplikace, soubor funkcí, které renderují výstupy pro šablony)
 
 ```python
@@ -89,7 +105,7 @@ def index(request):
         "flights": Flight.objects.all()
     })
 ```
-Vytvoříte správné šablony (layout.html a index.html) např. podle [django-templates](django-templates.md).
+
 
 Připravíme a vytvoříme databázi (v cmd.exe)
 
