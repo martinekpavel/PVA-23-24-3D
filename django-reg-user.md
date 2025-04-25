@@ -52,7 +52,7 @@ Vytvoříme šablonu:  `.\templates\aplikace\sign_up.html`
 
 {% block body %}
 
-<h2>Sign up</h2>
+<h3>Registrace uživatele</h3>
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
