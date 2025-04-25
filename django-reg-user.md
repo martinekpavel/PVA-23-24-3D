@@ -61,3 +61,10 @@ Vytvoříme šablonu:  `.\templates\aplikace\sign_up.html`
 
 {% endblock %}
 ```
+
+Chceme-li ve formuláři češtinu upravíme `settings.py`
+
+```python
+# LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'cs'
+```
