@@ -49,3 +49,19 @@ Upravíme `urls.py` aplikace:
 path("sign_up", views.sign_up, name="sign_up")
 ```
 
+Vytvoříme šablonu:  `.\templates\aplikace\sign_up.html`
+
+```python
+{% extends "users/layout.html" %}
+
+{% block body %}
+
+<h2>Sign up</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+</form>
+
+{% endblock %}
+```
