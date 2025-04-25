@@ -1,10 +1,6 @@
 # Registrace uživatele 
 
-Upravíme `urls.py` projektu:
-
-```python
-path('accounts/', include('django.contrib.auth.urls')),
-```
+Zdroj: https://dev.to/donesrom/how-to-set-up-django-built-in-registration-in-2023-41hg
 
 Vytvoříme soubor s formulářem v rámci naší aplikace: `formular.py`
 
