@@ -1,0 +1,7 @@
+# Registrace uživatele 
+
+Upravíme `ursl.py` projektu:
+
+```python
+path('accounts/', include('django.contrib.auth.urls')),
+```
