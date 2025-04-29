@@ -1,0 +1,40 @@
+# Deploy
+
+Prerequisite:
+
+- nainstalovaný a nakonfigurovaný git
+
+## PC -> Git
+
+Potřebujeme soubor .gitignore nakonfigurovaný pro python. Ze školních důvodů budeme kopírovat i databázi (nedoporušuji v produkci), tzn. z gitignore vyřadím sqlite.db (Django stuff).
+https://github.com/github/gitignore/blob/main/Python.gitignore
+
+```
+git init
+git add *
+git commit -m "first commit"
+git branch -M main
+```
+
+## Git -> Github
+
+Vytvoř repozitář na githubu (pokud nechci řešit autentizaci na pythonanywhere, pak jej udělám public) a pak jej propoj se soubory v počítači:
+
+```
+git remote add origin https://github.com/martinekpavel/PVA-23-24-3D.git
+git push -u origin main
+```
+
+Pokud není problém s autentizací, pak máme soubory na githubu.
+
+## Github -> Pythonanywhere (EU!)
+
+pokračuji podle:
+
+https://help.pythonanywhere.com/pages/DeployExistingDjangoProject
+
+vyřešte allowed hosts.
+
+bacha na lomítka u šablon, musí být "/"
+
+vyřešte statické soubory: https://help.pythonanywhere.com/pages/DjangoStaticFiles
