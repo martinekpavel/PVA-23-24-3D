@@ -45,4 +45,6 @@ bacha na lomítka u šablon, musí být "/"
 vyřešte statické soubory: https://help.pythonanywhere.com/pages/DjangoStaticFiles
 a upravte cestu ke statickým souborů na záložce web
 
-v a konzoli se píše `python manage.py collectstatic`
+v a konzoli se napíše `python manage.py collectstatic`
+
+že všechno funguje zjistíte tak, že zkusíte admin rozhranní, pokud má ccs styly, je to ok
