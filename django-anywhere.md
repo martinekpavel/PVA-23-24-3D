@@ -33,9 +33,16 @@ pokračuji podle:
 
 https://help.pythonanywhere.com/pages/DeployExistingDjangoProject
 
-vyřešte allowed hosts.
+- uploading your code to PythonAnywhere
+- create virtualenv
+- settings up your Web app
+- edit your WSGI file
+
+Vyřešte allowed hosts = adresa webovky musí být v uvozovkách.
 
 bacha na lomítka u šablon, musí být "/"
 
 vyřešte statické soubory: https://help.pythonanywhere.com/pages/DjangoStaticFiles
 a upravte cestu ke statickým souborů na záložce web
+
+v a konzoli se píše `python manage.py collectstatic`
