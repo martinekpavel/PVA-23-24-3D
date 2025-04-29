@@ -38,3 +38,4 @@ vyřešte allowed hosts.
 bacha na lomítka u šablon, musí být "/"
 
 vyřešte statické soubory: https://help.pythonanywhere.com/pages/DjangoStaticFiles
+a upravte cestu ke statickým souborů na záložce web
