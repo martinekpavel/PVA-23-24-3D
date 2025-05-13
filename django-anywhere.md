@@ -48,3 +48,34 @@ a upravte cestu ke statickým souborů na záložce web
 v a konzoli se napíše `python manage.py collectstatic`
 
 že všechno funguje zjistíte tak, že zkusíte admin rozhranní, pokud má ccs styly, je to ok
+
+
+## Možná pomůže
+
+`settings.py`
+
+```python
+
+from pathlib import Path
+import os
+
+BASE_DIR = Path(__file__).resolve().parent.parent # tohle asi v souboru bude
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'), 
+)
+
+```
+
+### V nastavení na webu:
+
+Static files:
+
+URL
+`/static`
+
+Directory
+`/home/%učet%/%projekt%/static`
+
+
